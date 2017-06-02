@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		FC497C621EE2140D004174EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC497C611EE2140D004174EF /* AppDelegate.swift */; };
-		FC497C641EE2140D004174EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC497C631EE2140D004174EF /* ViewController.swift */; };
 		FC497C671EE2140D004174EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC497C651EE2140D004174EF /* Main.storyboard */; };
 		FC497C691EE2140D004174EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC497C681EE2140D004174EF /* Assets.xcassets */; };
 		FC497C6C1EE2140D004174EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC497C6A1EE2140D004174EF /* LaunchScreen.storyboard */; };
+		FC497C771EE216E0004174EF /* CircleBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC497C761EE216E0004174EF /* CircleBtn.swift */; };
+		FC497C791EE21AEB004174EF /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC497C781EE21AEB004174EF /* MainVC.swift */; };
+		FC497C7B1EE21B99004174EF /* BtnProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC497C7A1EE21B99004174EF /* BtnProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FC497C5E1EE2140D004174EF /* Scribe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scribe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC497C611EE2140D004174EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FC497C631EE2140D004174EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FC497C661EE2140D004174EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC497C681EE2140D004174EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC497C6B1EE2140D004174EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC497C6D1EE2140D004174EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC497C761EE216E0004174EF /* CircleBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleBtn.swift; sourceTree = "<group>"; };
+		FC497C781EE21AEB004174EF /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		FC497C7A1EE21B99004174EF /* BtnProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BtnProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,40 @@
 		FC497C601EE2140D004174EF /* Scribe */ = {
 			isa = PBXGroup;
 			children = (
+				FC497C751EE216B7004174EF /* Controller */,
+				FC497C741EE216B1004174EF /* View */,
+				FC497C731EE216A1004174EF /* Model */,
 				FC497C611EE2140D004174EF /* AppDelegate.swift */,
-				FC497C631EE2140D004174EF /* ViewController.swift */,
-				FC497C651EE2140D004174EF /* Main.storyboard */,
 				FC497C681EE2140D004174EF /* Assets.xcassets */,
 				FC497C6A1EE2140D004174EF /* LaunchScreen.storyboard */,
 				FC497C6D1EE2140D004174EF /* Info.plist */,
+				FC497C7A1EE21B99004174EF /* BtnProtocol.swift */,
 			);
 			path = Scribe;
+			sourceTree = "<group>";
+		};
+		FC497C731EE216A1004174EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FC497C741EE216B1004174EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC497C651EE2140D004174EF /* Main.storyboard */,
+				FC497C761EE216E0004174EF /* CircleBtn.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FC497C751EE216B7004174EF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC497C781EE21AEB004174EF /* MainVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC497C641EE2140D004174EF /* ViewController.swift in Sources */,
+				FC497C771EE216E0004174EF /* CircleBtn.swift in Sources */,
+				FC497C791EE21AEB004174EF /* MainVC.swift in Sources */,
+				FC497C7B1EE21B99004174EF /* BtnProtocol.swift in Sources */,
 				FC497C621EE2140D004174EF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
